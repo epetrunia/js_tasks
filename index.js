@@ -172,3 +172,27 @@ if ((a > 2 && a < 11) || (b >= 6 && b < 14)) {
 } else {
     alert('Неверно');
 }
+
+// На switch-case
+
+// 1. Переменная num может принимать 4 значения: 1, 2, 3 или 4. Если она имеет значение '1', то в переменную result запишем 'зима', если имеет значение '2' – 'весна' и так далее. Решите задачу через switch-case.
+const num = 7;
+let result;
+
+switch (num) {
+    case 1:
+        result = 'зима';
+        break;
+    case 2:
+        result = 'весна'
+        break;
+    case 3:
+        result = 'лето';
+        break;
+    case 4:
+        result = 'осень';
+        break;
+    default:
+        result = 'Unknown number';
+}
+alert(result);
