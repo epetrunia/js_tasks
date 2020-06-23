@@ -196,3 +196,75 @@ switch (num) {
         result = 'Unknown number';
 }
 alert(result);
+
+
+// Задачи
+
+// 1. В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+const day = 60;
+
+switch (true) {
+    case day >= 1 && day <= 10:
+        alert('Первая декада');
+        break;
+    case day > 10 && day <= 20:
+        alert('Вторая декада');
+        break;
+    case day > 20 && day <= 31:
+        alert('Третья декада');
+        break;
+    default:
+        alert('Unknown number');
+}
+
+// 2. В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).
+const month = 5;
+
+switch (true) {
+    case month === 1 || month === 2 || month === 12:
+        alert('зима');
+        break;
+    case month >= 3 && month <= 5:
+        alert('весна');
+        break;
+    case month >= 6 && month <= 8:
+        alert('лето');
+        break;
+    case month >= 9 && month <= 11:
+        alert('осень');
+        break;
+    default:
+        alert('Unknown number');
+}
+
+// 3.  Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'.
+const stringValue = 'abcde';
+
+if (stringValue[0] === 'a') {
+    alert('да');
+} else {
+    alert('нет');
+}
+
+// 4. Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.
+const numString = '12345';
+
+if (Number(numString[0]) === 1 || (Number(numString[0])) === 2 || (Number(numString[0]) === 3)) {
+    alert('да');
+} else {
+    alert('нет');
+}
+
+// 5. Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
+const numbers = '123';
+const sum = Number(numbers[0]) + Number(numbers[1]) + Number(numbers[2]);
+alert(sum);
+
+// 6. Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.
+const nums = '332242';
+
+if (Number(nums[0]) + Number(nums[1]) + Number(nums[2]) === Number(nums[3]) + Number(nums[4]) + Number(nums[5])) {
+    alert('да');
+} else {
+    alert('нет');
+}
